@@ -1,20 +1,36 @@
 <template>
   <div>
+    <Logo />
+
     <Nuxt />
+
+    <div class="footer">
+      <Navigation />
+    </div>
   </div>
 </template>
 
-<style>
+<style lang="scss">
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  font-family: 'Spectral', sans-serif;
+  font-size: 20px;
+  color: #dbdbdb;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  padding: 20px;
+
+  &::after {
+    content: '';
+    width: 125vmax;
+    height: 125vmax;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    background: linear-gradient(0deg, #46203c, #162b3c);
+    animation: rotate 15s ease-in-out infinite;
+  }
 }
 
 *,
@@ -24,32 +40,19 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+a,
+a:visited {
+  color: #9953df;
   text-decoration: none;
-  padding: 10px 30px;
+  border-bottom: 1px solid;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 </style>

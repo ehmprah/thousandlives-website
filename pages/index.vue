@@ -1,63 +1,152 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
-      <h1 class="title">thousandlives-website</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+      <div class="about">
+        <div class="about__description">
+          A game as beautiful and unpredictable as life. Navigate what fate
+          throws at you and explore what a life well lived can mean in this
+          minimalist roguelite role playing life simulation. Life is wild and
+          then you die – a thousand times over.
+        </div>
+      </div>
+
+      <div class="section">
+        <Buy />
+      </div>
+
+      <!-- <div class="trailer">
+        <div class="iframe-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/47SFM1lvpq4"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div> -->
+
+      <!-- <div class="screenshots">
+        <h2>Screenshots</h2>
+        <div class="screenshots__container">
+          <Screenshot url="/img/Core-Defense-Screenshot-1.png" />
+          <Screenshot url="/img/Core-Defense-Screenshot-2.png" />
+          <Screenshot url="/img/Core-Defense-Screenshot-3.png" />
+          <Screenshot url="/img/Core-Defense-Screenshot-4.png" />
+          <Screenshot url="/img/Core-Defense-Screenshot-5.png" />
+          <Screenshot url="/img/Core-Defense-Screenshot-6.png" />
+          <Screenshot url="/img/Core-Defense-Screenshot-7.png" />
+          <Screenshot url="/img/Core-Defense-Screenshot-8.png" />
+          <Screenshot url="/img/Core-Defense-Screenshot-9.png" />
+          <Screenshot url="/img/Core-Defense-Screenshot-10.png" />
+          <Screenshot url="/img/Core-Defense-Screenshot-11.png" />
+          <Screenshot url="/img/Core-Defense-Screenshot-12.png" />
+        </div>
+      </div> -->
+
+      <div class="section">
+        <h2>Follow</h2>
+        <Follow />
+      </div>
+
+      <div class="section">
+        <h2>Quick Facts</h2>
+        <QuickFacts />
+      </div>
+
+      <div class="section">
+        <h2>Newsletter</h2>
+        <Subscription />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {}
+import Buy from '~/components/Buy.vue';
+import Follow from '~/components/Follow.vue';
+import QuickFacts from '~/components/QuickFacts.vue';
+// import Screenshot from '~/components/Screenshot.vue';
+import Subscription from '~/components/Subscription.vue';
+
+export default {
+  components: {
+    Buy,
+    Follow,
+    QuickFacts,
+    // Screenshot,
+    Subscription,
+  },
+  head() {
+    return {
+      title: 'Core Defense',
+    };
+  },
+};
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style lang="scss">
+.about {
+  width: 80vw;
+  max-width: 520px;
+  margin: 0 auto 40px auto;
+
+  &__description {
+    text-align: justify;
+    margin: 1em 0;
+    font-size: 24px;
+    color: #dbdbdb;
+  }
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.screenshots {
+  max-width: 960px;
+  margin: 80px auto;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    .screenshot {
+      flex: 1 0 200px;
+    }
+  }
 }
 
-.links {
-  padding-top: 15px;
+.section {
+  max-width: 640px;
+  margin: 60px auto;
+  h2 {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+}
+
+.newsletter {
+  margin: 80px auto;
+  &__info {
+    font-size: 0.8em;
+    color: #aaa;
+  }
+}
+
+.footer {
+  margin: 4em 0 2em 0;
 }
 </style>
