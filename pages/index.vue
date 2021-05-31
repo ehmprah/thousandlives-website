@@ -14,36 +14,43 @@
         <Buy />
       </div>
 
-      <!-- <div class="trailer">
+      <div class="section">
         <div class="iframe-container">
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube-nocookie.com/embed/47SFM1lvpq4"
+            src="https://www.youtube-nocookie.com/embed/PIRtGEB26zI"
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
         </div>
-      </div> -->
+      </div>
 
-      <!-- <div class="screenshots">
+      <div class="section screenshots">
         <h2>Screenshots</h2>
         <div class="screenshots__container">
-          <Screenshot url="/img/Core-Defense-Screenshot-1.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-2.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-3.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-4.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-5.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-6.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-7.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-8.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-9.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-10.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-11.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-12.png" />
+          <Screenshot url="/screenshots/01.png" />
+          <Screenshot url="/screenshots/02.png" />
+          <Screenshot url="/screenshots/03.png" />
+          <Screenshot url="/screenshots/04.png" />
+          <Screenshot url="/screenshots/05.png" />
+          <Screenshot url="/screenshots/06.png" />
         </div>
-      </div> -->
+      </div>
+
+      <div class="section screenshots">
+        <h2>Help shape this game!</h2>
+        <p>
+          We make games with a community-driven development approach. Your
+          feedback and thoughts are invaluable in making this game the best it
+          can be. We kindly invite you to join us on this journey. Get in touch
+          via our friendly
+          <a href="https://discord.gg/YWwXW3KP9v">Discord server</a> or share
+          little life stories
+          <a href="https://forms.gle/FLPJc1CqCeswTXg39">via this form</a>.
+        </p>
+      </div>
 
       <div class="section">
         <h2>Follow</h2>
@@ -51,7 +58,7 @@
       </div>
 
       <div class="section">
-        <h2>Quick Facts</h2>
+        <h2>Facts</h2>
         <QuickFacts />
       </div>
 
@@ -80,7 +87,7 @@ export default {
   },
   head() {
     return {
-      title: 'Core Defense',
+      title: 'Thousand Lives',
     };
   },
 };
@@ -120,11 +127,12 @@ export default {
 .screenshots {
   max-width: 960px;
   margin: 80px auto;
+
   &__container {
     display: flex;
     flex-wrap: wrap;
     .screenshot {
-      flex: 1 0 200px;
+      flex: 1 0 300px;
     }
   }
 }

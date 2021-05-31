@@ -53,7 +53,7 @@ ul.follow {
       display: block;
       background: #000;
       border: none;
-      border-radius: 2px;
+      border-radius: 4px;
       width: 64px;
       height: 64px;
       transition: all 0.1s;

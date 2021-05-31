@@ -22,8 +22,8 @@ html {
 
   &::after {
     content: '';
-    width: 125vmax;
-    height: 125vmax;
+    width: 150vmax;
+    height: 150vmax;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -45,6 +45,11 @@ a:visited {
   color: #9953df;
   text-decoration: none;
   border-bottom: 1px solid;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 @keyframes rotate {

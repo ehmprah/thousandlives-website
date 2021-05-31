@@ -1,65 +1,70 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">PRESSKIT "Core Defense"</h1>
+      <h1 class="title">PRESSKIT</h1>
 
       <div class="text">
-        <h2>Description</h2>
         <div class="text__description">
-          A roguelike tower defense game with a dash of deckbuilding. Choose a
-          reward, improve your build, survive the next wave, repeat. Highly
-          replayable, difficult, and addictive. You'll want just one more wave,
-          just one more run!
+          A game as beautiful and unpredictable as life. Navigate what fate
+          throws at you and explore what a life well lived can mean in this
+          minimalist roguelite role playing life simulation. Life is wild and
+          then you die – a thousand times over.
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="iframe-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/PIRtGEB26zI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
 
       <div class="text">
-        <h2>History</h2>
+        <h2>Team</h2>
         <div class="text__description">
-          Core Defense is a singleplayer spinoff from Coregrounds, a multiplayer
-          tower defense game released in 2018, and shut down in early 2019 due
-          to
-          <a href="https://frgmnts.blog/f/how-not-to-make-a-game.html"
-            >various reasons.</a
+          Thousand Lives is the first game of emfinite studio. The
+          german-french-canadian indie studio is comprised of Mario Kaiser,
+          Mathias Tournier and Michael Champion and hails from Berlin and
+          Vancouver.
+        </div>
+        <div class="text__description">
+          Thousand Lives was first conceived years ago by Mario "ehmprah"
+          Kaiser, who until now was busy making
+          <a href="https://store.steampowered.com/app/649770/Coregrounds/"
+            >Coregrounds</a
           >
-          After the shutdown, lead developer Mario "ehmprah" Kaiser still had an
-          itch that could only be scratched by reinventing the tower defense
-          genre yet again, this time with solo project Core Defense.
+          and its spin-off
+          <a href="https://store.steampowered.com/app/1203360/Core_Defense/"
+            >Core Defense</a
+          >. But success of the latter laid the foundation to finally make this
+          passion project a reality.
         </div>
       </div>
 
-      <div class="trailer">
-        <h2>Videos</h2>
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube-nocookie.com/embed/47SFM1lvpq4"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-
-      <div class="screenshots">
+      <div class="section screenshots">
         <h2>Screenshots</h2>
-        <p><a href="/img/Core-Defense-Screenshots.zip">Download as .zip</a></p>
+        <p class="centered">
+          <a href="/screenshots/thousand-lives-screenshots.zip"
+            >Download as .zip</a
+          >
+        </p>
         <div class="screenshots__container">
-          <Screenshot url="/img/Core-Defense-Screenshot-1.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-2.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-3.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-4.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-5.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-6.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-7.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-8.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-9.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-10.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-11.png" />
-          <Screenshot url="/img/Core-Defense-Screenshot-12.png" />
+          <Screenshot url="/screenshots/01.png" />
+          <Screenshot url="/screenshots/02.png" />
+          <Screenshot url="/screenshots/03.png" />
+          <Screenshot url="/screenshots/04.png" />
+          <Screenshot url="/screenshots/05.png" />
+          <Screenshot url="/screenshots/06.png" />
         </div>
       </div>
 
-      <div class="screenshots screenshots--gif">
+      <!-- <div class="screenshots screenshots--gif">
         <h2>GIFs</h2>
         <p><a href="/gifs/Core-Defense-GIFs.zip">Download as .zip</a></p>
         <div class="screenshots__container">
@@ -76,15 +81,17 @@
           <Screenshot url="/gifs/Core-Defense-11.gif" />
           <Screenshot url="/gifs/Core-Defense-12.gif" />
         </div>
-      </div>
+      </div> -->
 
-      <div class="logos">
+      <div class="section">
         <h2>Logos</h2>
-        <p><a href="/logo/Core-Defense-Logos.zip">Download as .zip</a></p>
+        <p class="centered">
+          <a href="/logos/thousand-lives-logos.zip">Download as .zip</a>
+        </p>
         <div class="logos__container">
-          <img class="logo" src="/logo/core.svg" />
-          <img class="logo" src="/logo/core_defense_logo_final.svg" />
-          <img class="logo" src="/logo/core_defense_logo_font_only.svg" />
+          <Screenshot url="/logos/01.png" />
+          <Screenshot url="/logos/02.png" />
+          <Screenshot url="/logos/03.png" />
         </div>
       </div>
 
@@ -97,15 +104,12 @@
         <h2>Links</h2>
         <ul class="list-inline">
           <li>
-            <a href="https://ehmprah.itch.io/core-defense">Itch.io</a>
-          </li>
-          <li>
-            <a href="https://store.steampowered.com/app/1203360/Core_Defense/"
+            <a href="https://store.steampowered.com/app/1631360/Thousand_Lives/"
               >Steam</a
             >
           </li>
           <li>
-            <a href="https://discord.gg/URcmzXm">Discord</a>
+            <a href="https://discord.gg/YWwXW3KP9v">Discord</a>
           </li>
           <li>
             <a href="https://twitter.com/ehmprah">Twitter</a>
@@ -114,98 +118,54 @@
       </div>
 
       <div class="section">
-        <h2>Mentions</h2>
-        <p>
-          "Good bread doesn't need butter ... Core Defense has always left me
-          with that 'just one more wave' thirst."<br />– Óscar Morgado,
-          <a
-            href="https://rubberchickengames.com/2020/02/10/core-defense-um-bom-pao-nao-precisa-de-manteiga/"
-            >Rubber Chicken</a
-          >
-        </p>
-        <p>
-          "Core Defense will not leave you hungry, proving to be effective and
-          well designed."<br />– Charlotte Benoit,
-          <a
-            href="https://game-guide.fr/272504-core-defense-efficacite-et-simplicite/"
-            >Game Guide</a
-          >
-        </p>
-        <p>
-          "Addictive Tower Defense"<br />– Calum Fraser,
-          <a
-            href="https://twitter.com/gameralphabeta/status/1208815708169224192"
-            >AlphaBetaGamer</a
-          >
-        </p>
-        <p>
-          "Pretty good and it really started scratching the itch as I got
-          further into it"<br />– Liam Dawe,
-          <a
-            href="https://www.gamingonlinux.com/articles/core-defense-prelude-is-out-giving-you-a-taste-of-tower-defense-mixed-with-a-little-deck-building.16276"
-            >GamingOnLinux</a
-          >
-        </p>
-        <p>
-          "Recommended!"<br />– Thiago Correia,
-          <a
-            href="https://www.nerdmaldito.com/2020/06/core-defense-tower-defense-muito.html"
-            >Nerdmaldito</a
-          >
+        <h2>Contact</h2>
+        <p class="centered">
+          <a href="mailto:ehmprah@gmail.com">ehmprah@gmail.com</a>
         </p>
       </div>
 
       <div class="section">
-        <h2>Press copy and other requests</h2>
-        Send a mail to <a href="mailto:ehmprah@gmail.com">ehmprah@gmail.com</a>
-      </div>
-
-      <div class="section">
-        <h2>Join ehmprah's newsletter</h2>
+        <h2>Newsletter</h2>
         <Subscription />
-      </div>
-
-      <div class="footer">
-        <Navigation />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Navigation from '~/components/Navigation.vue';
 import QuickFacts from '~/components/QuickFacts.vue';
 import Screenshot from '~/components/Screenshot.vue';
 import Subscription from '~/components/Subscription.vue';
 
 export default {
   components: {
-    Navigation,
     QuickFacts,
     Screenshot,
-    Subscription
+    Subscription,
   },
   head() {
     return {
-      title: 'Presskit "Core Defense"'
+      title: 'Presskit Thousand Lives',
     };
-  }
+  },
 };
 </script>
 
 <style lang="scss">
 .title {
-  margin-top: 2em;
+  margin: 1em;
   line-height: 1.5em;
   font-size: 2em;
+  text-align: center;
 }
 
 .text {
   width: 80vw;
   max-width: 640px;
   margin: 0 auto 80px auto;
+
   &__description {
-    text-align: left;
+    text-align: justify;
     margin: 1em 0;
   }
 }
@@ -229,22 +189,37 @@ export default {
   }
 }
 
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .logos {
   &__container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    .logo {
-      flex: 0 0 150px;
-      margin: 1em;
-      height: auto;
-    }
   }
 }
 
 .section {
-  max-width: 600px;
-  margin: 80px auto;
+  max-width: 640px;
+  margin: 60px auto;
+  h2 {
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
 }
 
 .newsletter {
@@ -255,7 +230,18 @@ export default {
   }
 }
 
-.footer {
-  margin: 4em 0 2em 0;
+p.centered {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+ul.list-inline {
+  list-style-type: none;
+  text-align: center;
+
+  li {
+    display: inline;
+    margin: 0.5em;
+  }
 }
 </style>

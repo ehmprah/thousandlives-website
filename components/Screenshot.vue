@@ -16,7 +16,7 @@ const mixin = {
   beforeCreate() {
     this.uuid = uuid.toString();
     uuid += 1;
-  }
+  },
 };
 
 export default {
@@ -25,14 +25,14 @@ export default {
   props: {
     url: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   data() {
     return {
-      id: `screenshot-${this.uuid}`
+      id: `screenshot-${this.uuid}`,
     };
-  }
+  },
 };
 </script>
 

@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <div class="logo__inner">THOU<br />SAND<br />LIVES</div>
+    <a href="/" class="logo__inner">THOU<br />SAND<br />LIVES</a>
   </div>
 </template>
 
