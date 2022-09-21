@@ -11,6 +11,23 @@
 </template>
 
 <style lang="scss">
+@font-face {
+  font-family: 'Spectral';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/spectral-v13-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+    url('/fonts/spectral-v13-latin-regular.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('/fonts/spectral-v13-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('/fonts/spectral-v13-latin-regular.woff')
+      format('woff'),
+    /* Modern Browsers */ url('/fonts/spectral-v13-latin-regular.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */
+      url('/fonts/spectral-v13-latin-regular.svg#Spectral') format('svg'); /* Legacy iOS */
+}
+
 html {
   font-family: 'Spectral', sans-serif;
   font-size: 20px;
